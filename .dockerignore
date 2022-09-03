@@ -1,0 +1,8 @@
+*
+
+!docker
+!pyproject.toml
+!poetry.lock
+!scripts
+!docker-composel.yaml
+!Makefile

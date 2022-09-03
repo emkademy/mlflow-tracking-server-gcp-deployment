@@ -1,0 +1,14 @@
+# MLFlow 
+MLFLOW_HOST=0.0.0.0
+MLFLOW_PORT=6100
+ 
+# Postgres
+POSTGRES_CONNECTION_NAME=<postgres-connection-name> (you can find in on GCP -> SQL -> your database -> Connection Name)
+POSTGRES_USER=<postgres-username>
+POSTGRES_PASSWORD_SECRET_NAME=<postgres-secret-name>
+POSTGRES_HOST=<postgres-host>
+POSTGRES_PORT=5432
+POSTGRES_DATABASE_NAME=<postgres-database-name>
+
+ARTIFACT_STORE=gs://<gcs-bucket-location>
+

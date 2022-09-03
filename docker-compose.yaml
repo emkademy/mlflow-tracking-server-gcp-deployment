@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  app: &app
+    user: root
+    hostname: "${HOSTNAME}"
+    image: "${DOCKER_IMAGE_NAME}"
+    container_name: mlflow-tracking-server
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    env_file:
+      - .envs/.gcp
+      - .envs/.tracking-server
+    ipc: host
+    network_mode: host
+    init: true
+    volumes:
+      - ./:/app

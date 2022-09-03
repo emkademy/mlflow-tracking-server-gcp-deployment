@@ -1,0 +1,18 @@
+# General
+GCP_PROJECT_ID=<gcp-project-id>
+PROJECT_NAME=<gcp-project-name>
+DOCKER_IMAGE_NAME=${PROJECT_NAME}-mlflow
+GCP_DOCKER_REGISTERY_NAME=<gcp-artifact-registery-name>
+GCP_DOCKER_REGISTERY_URL=europe-west4-docker.pkg.dev/${GCP_PROJECT_ID}/${GCP_DOCKER_REGISTERY_NAME}/${DOCKER_IMAGE_NAME}
+
+IMAGE_NAME=<gcp-machine-image-name> (recommended: ubuntu-2204-jammy-v20230714)
+IMAGE_PROJECT_ID=<gcp-machine-image-project-name> (recommended: ubuntu-os-cloud)
+
+# Compute Instance
+VM_NAME=${PROJECT_NAME}-mlflow
+REGION=<region>
+ZONE=<zone>
+LABELS=<comma-seperated-key-value-pairs>
+MACHINE_TYPE=<machine-type>
+NETWORK=<network> (recommended: default)
+SUBNET=<subnet> (recommended: default)
